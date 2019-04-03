@@ -14,18 +14,15 @@ somme = int(customerSomme)
 #Got 100
 nbBillet100 = somme / 100
 left100 = somme % 100
+#Next got 50
+nbBillet50 = somme / 50
+left50 = somme % 50
+#Next got 10
+nbBillet10 = somme / 10
+left10 = somme % 10
+#Next got coins of 2
+nbCoins = somme / 2
+leftCoins = somme % 2
+#This is the End Friends
 
-if left100 > 0:
-   #Next got 50
-   nbBillet50 = somme / 50
-   left50 = somme % 50
-
-   #Next got 10
-   nbBillet10 = somme / 10
-   left10 = somme % 10
-
-   #Next got coins of 2
-   nbCoins = somme / 2
-   leftCoins = somme % 2#This is the End Friends
-
-print("And the result is.... \n", nbBillet100, "x100/n", nbBillet50, "x50/n", nbBillet10, "x10/n", nbCoins, "x2/n", nbleftCoins, "/n")
+print("Vous avez le choix entre: .... \n", nbBillet100, "x100/n", nbBillet50, "x50/n", nbBillet10, "x10/n", nbCoins, "x2/n", leftCoins, "/n")
