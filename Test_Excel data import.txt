@@ -1,6 +1,0 @@
-import xlrd
-book = xlrd.open_workbook('Database1.xlsx')
-sheet = book.sheet_by_name('Sheet1')
-data = [[sheet.cell_value(2, 2) for c in range(sheet.ncols)] for r in range(sheet.nrows)]
-# Profit !
-print(data)
