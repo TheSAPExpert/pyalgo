@@ -10,4 +10,6 @@ for num in array:
       
     # checking condition 
     if num % 2 == 0: 
-       print(num, end = " ") 
+       print(num, end = " ")
+
+       
