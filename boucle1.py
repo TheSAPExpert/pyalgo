@@ -47,6 +47,6 @@ def min(anArray):
 array = [15, 3, 25, 10, 7, -15, 43, 2, 4, 6]
 
 # Initialise .. as the first item in the array
-maxVal = max(array)
+minVal = min(array)
 # Print the Value
-print(maxVal)
+print(minVal)
