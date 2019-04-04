@@ -52,11 +52,17 @@ def average(anArray):
         sommeItem = len(anArray)
     return total / sommeItem
 
+#Function multiply the values of an array
+def multiply(anArray):
+    fact = 1
+    for val in anArray:
+        fact = val * fact
+    return fact
 
 #EXECUTION##############################################################
 # My table
-array = [15, 3, 25, 10, 7, -15, 43, 2, 4, 6]
+array = [15, 3]
 # Initialise .. as the first item in the array
-averageVal = average(array)
+multiplyVal = multiply(array)
 # Print the Value
-print(averageVal)
+print(multiplyVal)
