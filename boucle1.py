@@ -24,7 +24,7 @@ def compare(firstVal, secondVal, desc=True):
     if (desc):
         return getLowerOf(firstVal,secondVal)
 
-    return getGreaterOf(firstVal, secondVal)
+    return getGreatestOf(firstVal, secondVal)
 
 #Function return the max value of an array
 def max(anArray):
@@ -32,24 +32,21 @@ def max(anArray):
     for value in anArray[1:]:
         theMax = compare(theMax, value, False)
 
+    return theMax
+
 #Function return the min value of an array
 def min(anArray):
     theMin = anArray[0]
     for value in anArray[1:]:
         theMin = compare(theMin, value, True)
+    
+    return theMin
 
 
 # My table
 array = [15, 3, 25, 10, 7, -15, 43, 2, 4, 6]
 
 # Initialise .. as the first item in the array
-maxVal = array[0]
-
-# iterating each number in list starting at second element
-for num in array[1:]: 
-      
-    # find in array using While Loop
-        maxVal = getGreatestOf(maxVal,num)
-
+maxVal = max(array)
 # Print the Value
 print(maxVal)
