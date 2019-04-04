@@ -23,13 +23,20 @@ def getGreatestOf(firstVal, secondVal):
 def compare(firstVal, secondVal, desc=True):
     if (desc):
         return getLowerOf(firstVal,secondVal)
-        
+
     return getGreaterOf(firstVal, secondVal)
 
+#Function return the max value of an array
+def max(anArray):
+    theMax = anArray[0]
+    for value in anArray[1:]:
+        theMax = compare(theMax, value, False)
 
-#Function that extracts greatest and lowest of array
-def extractorMax&Min(maxVal,minVal):
-
+#Function return the min value of an array
+def min(anArray):
+    theMin = anArray[0]
+    for value in anArray[1:]:
+        theMin = compare(theMin, value, True)
 
 
 # My table
