@@ -2,7 +2,7 @@
 1. Determine even numbers in table
 2. Determine smallest value in table
 3. Determine biggest value in table
-4. Create a 
+4. Create greatest and lowest functions
 
 """
 #Function returns lowest value of two params
@@ -22,15 +22,14 @@ def getGreatestOf(firstVal, secondVal):
 # My table
 array = [15, 3, 25, 10, 7, -15, 43, 2, 4, 6]
 
-# Initialise the min as the first item in the array
+# Initialise .. as the first item in the array
 maxVal = array[0]
 
 # iterating each number in list starting at second element
 for num in array[1:]: 
       
-    # find minimum in array using While Loop
-    if num > maxVal:
-        maxVal = num
+    # find in array using While Loop
+        maxVal = getGreatestOf(maxVal,num)
 
-# Print the minValue
+# Print the Value
 print(maxVal)
