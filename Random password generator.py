@@ -24,7 +24,7 @@ puncList = [".",";",":","!","?","/","\\",",","#","@","$","&",")","(","\""]
 #EXECUTION#
 #Define lenght password
 psLenght = random.randint(8,12)    
-print("Length password:", psLenght)
+print("Length Password:", psLenght)
 
 #Define random items of password
 Lower = alphabetLowerC[random.randint(0,25)]
@@ -48,9 +48,9 @@ while len(password) < psLenght:
         slave  = number
     elif master == 3:
         slave = puncList
-    randomNum = random.randint(0, len(slave)-1)
-    password.append(slave[randomNum])
+    randomItemInSlave = random.randint(0, len(slave)-1)
+    password.append(slave[randomItemInSlave])
 
 #Shuffle tables
 random.shuffle(password)
-print(*password, sep="")
+print("Password: ", *password, sep="")
