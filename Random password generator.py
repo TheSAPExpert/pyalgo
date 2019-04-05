@@ -29,6 +29,6 @@ import random
 #Password lenght
 psLenght = random.choice([size8,size9,size10,size11,size12])
 for i, value in enumerate(psLenght):
-    i = random.choice(number)
-    print(i)
+    i = random.choice([random.choice(number),random.choice(puncList),random.choice(alphabetLowerC),random.choice(alphabetUpperC)])
+    print(i, end = '')
 
