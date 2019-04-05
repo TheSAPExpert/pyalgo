@@ -17,18 +17,11 @@ alphabetLowerC = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m
 alphabetUpperC = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 number = [0,1,2,3,4,5,6,7,8,9]
 puncList = [".",";",":","!","?","/","\\",",","#","@","$","&",")","(","\""]
-size8 = [0,1,2,3,4,5,6,7]
-size9 = [0,1,2,3,4,5,6,7,8]
-size10 = [0,1,2,3,4,5,6,7,8,9]
-size11 = [0,1,2,3,4,5,6,7,8,9,10]
-size12 = [0,1,2,3,4,5,6,7,8,9,10,11]
+psLenght = random.randint(8,12)
+
 
 #EXECUTION#
 import random
 
-#Password lenght
-psLenght = random.choice([size8,size9,size10,size11,size12])
-for i, value in enumerate(psLenght):
-    i = random.choice([random.choice(number),random.choice(puncList),random.choice(alphabetLowerC),random.choice(alphabetUpperC)])
-    print(i, end = '')
-
+passwordEmpty = list(range(psLenght))
+print(passwordEmpty, end='')
